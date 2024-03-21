@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noble Hospital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Noble Hospital</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#fileUpload">Secure File Upload</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="login.php">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Our Commitment to Excellence in Healthcare</h2>
+    <p>Welcome to Noble Hospital, where we strive to provide top-notch healthcare services with compassion and dedication.</p>
+    <img class="width1" src="noble-hospital-.jpg">
+    <img class="width" src="Hospital.jpg">
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Medical Consultation</li>
+      <li>Surgery and Specialized Procedures</li>
+      <li>Diagnostic Services</li>
+      <li>Emergency Services</li>
+      <li>Surgery and Operative Procedures</li>
+      <li>Primary Care and General Medicine</li>
+      <li>Maternity and Obstetrics</li>
+    </ul>
+    <div class="container">
+
+      <img class="size" src="service.jpg">
+      <img class="size" src="service1.jpg">
+      <img class="size" src="service2.jpg">
+      <img class="size" src="service3.jpg">
+    </div>
+
+    <!-- Add images and additional details for each service -->
+  </section>
+
+  <section id="fileUpload">
+    <h2>Secure File Upload</h2>
+    <p>Upload your medical documents securely for efficient and confidential processing.</p>
+    <form action="upload.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+      <input type="file" name="file" id="fileInput" required>
+      <button type="submit">Upload</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2 style="background-color: aqua; display: inline;">Contact Us</h2>
+
+    <p>For inquiries and appointments, please reach out to our dedicated team.</p>
+
+
+    <p>Noble Hospital<br>
+      153, Magarpatta City Road,<br>
+      Hadapsar, Pune-411013.</p>
+
+    <p>Phone:<br>
+      +91-22-69315555<br>
+      + (91) 8007006611</p>
+
+    <p>Email:<br>
+      <a href="mailto:noblecares@noblehrc.com">noblecares@noblehrc.com</a></p>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d484291.6042793589!2d73.49598485497718!3d18.505019999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1f10783d64d%3A0x4f4955b8fd4ba112!2sNoble%20Hospitals%20%26%20Research%20Centre!5e0!3m2!1sen!2sin!4v1707119606972!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- Add contact details, a contact form, or a map if applicable -->
+    <h2>Contact Form</h2>
+    <form action="submit_contact.php" method="post">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      <label for="comment">Comment:</label><br>
+      <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer class="label">
+    <p>&copy; 2024 Noble Hospital. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script>
+    function validateForm() {
+      // Perform server-side validation here if required
+      // For demonstration purposes, let's assume validation is implemented
+      return true; // Return true if validation passes, false otherwise
+    }
+  </script>
+</body>
+
+</html>
